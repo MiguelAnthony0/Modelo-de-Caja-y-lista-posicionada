@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caja y lista posicionada</title>
+    <style>
+        body
+        {
+            background-color: rgba(221,221,221,255);
+        }
+        div{
+            border: 6px dashed red;
+            margin-top: 35px;
+            margin-left: 25px;
+            margin-right: 15px;
+            height: 700px;
+            width: 1400px;
+            background-color: rgba(187,187,187,255);
+        }
+        h2
+        {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 55px; 
+            font-family: arial;
+        }
+        p
+        {
+            margin-left: 20px;
+            font-size: 30px; 
+            font-family: arial;
+            text-align: left;
+        }
+        #div2
+        {
+            background-color: rgba(153,153,153,255);
+            border: 4px solid rgb(125,129,136);
+            height: 120px;
+            width: 1350px;
+        }
+        #p2
+        {
+            color: rgba(105,123,176,255);
+            font-size: 30px;
+            text-align: left;
+        }
+        span
+        {
+            background-color: rgb(131,11,138);
+        }
+        #div3
+        {
+           background-color: rgba(192,192,192,255); 
+           height: 175px;
+           width: 600px;
+           border: 4px;
+           display: flex;
+        }
+        ul
+        {
+            font-size: 25px;
+            color: rgba(6,13,251,255);
+        }
+        ol
+        {
+            font-size: 25px;
+            color: rgba(128,0,128,255);
+        }
+        #listas
+        {
+            flex: 1;
+            margin-right: 4px; 
+        }
+    </style>
+</head>
+ <body>
+    <div>
+        <h2 >Práctica Modelo de Caja y lista posicionada</h2>
+        <p>Al anidar etiquetas, no se pueden <i>cruzar</i>. 
+            Así, se ha empezado por la etiqueda de inicio de párrafo, 
+            pero a continuación hay otra etiqueta de inicio para énfasis, 
+            por lo que antes de cerrar la etiqueta de párrafo hay que cerrar la etiqueta de énfasis</p>
+            <div id = "div2">
+                <p id = "p2">Los párrafos creados con HTML son elementos de <span><u>bloque</u></span>, por lo que siempre ocupan toda la anchura de la ventana del navegador</p>
+            </div>
+            <p>Strong es una etiqueta en <span><b><u>Línea</u></b></span></p>
+        <div id = "div3">
+            <ul id = "listas">
+                <li>Primera opción de la lista.</li>
+                <li>Segunda opción.</li>
+                <li>Tercera opción</li>
+                <li>Cuarta opción.</li>
+            </ul>
+            <ol id = "listas">
+                <li>Primera opción de la lista.</li>
+                <li>Segunda opción.</li>
+                <li>Tercera opción</li>
+                <li>Cuarta opción.</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
